@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Expense_Tracker.Migrations
+namespace Expense_Manager.Migrations
 {
     public partial class DeletedIconField : Migration
     {

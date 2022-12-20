@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Expense_Tracker.Models;
+using Expense_Manager.Models;
 
-namespace Expense_Tracker.Controllers
+namespace Expense_Manager.Controllers
 {
     public class TransactionController : Controller
     {
@@ -18,14 +13,14 @@ namespace Expense_Tracker.Controllers
             _context = context;
         }
 
-        // GET: Transaction
+        // GET запит: за посиланням Transaction
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Transactions.Include(t => t.Category);
             return View(await applicationDbContext.ToListAsync());
         }
 
-        // GET: Transaction/AddOrEdit
+        // GET запит: за посиланням Transaction/AddOrEdit
         public IActionResult AddOrEdit(int id = 0)
         {
             PopulateCategories();
@@ -35,7 +30,7 @@ namespace Expense_Tracker.Controllers
                 return View(_context.Transactions.Find(id));
         }
 
-        // POST: Transaction/AddOrEdit
+        // POST запит: за посиланням Transaction/AddOrEdit
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -55,7 +50,7 @@ namespace Expense_Tracker.Controllers
             return View(transaction);
         }
 
-        // POST: Transaction/Delete/5
+        // POST запит: за посиланням Transaction/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

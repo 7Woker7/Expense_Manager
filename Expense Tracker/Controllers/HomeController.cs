@@ -1,11 +1,12 @@
-﻿using Expense_Tracker.Models;
+﻿using Expense_Manager.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Expense_Tracker.Controllers
+namespace Expense_Manager.Controllers
 {
     public class HomeController : Controller
     {
+        // Налаштування логів для спрощення моніторингу роботи програми
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)

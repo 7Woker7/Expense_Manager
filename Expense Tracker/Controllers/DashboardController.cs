@@ -1,9 +1,9 @@
-﻿using Expense_Tracker.Models;
+﻿using Expense_Manager.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 
-namespace Expense_Tracker.Controllers
+namespace Expense_Manager.Controllers
 {
     public class DashboardController : Controller
     {

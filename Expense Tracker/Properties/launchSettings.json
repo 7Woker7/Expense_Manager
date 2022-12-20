@@ -8,11 +8,11 @@
     }
   },
   "profiles": {
-    "Expense_Tracker": {
+    "Expense_Manager": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:5110",
+      "applicationUrl": "http://localhost:5001",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

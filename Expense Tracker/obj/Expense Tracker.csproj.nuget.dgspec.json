@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Arsen\\Andrii\\Kursova\\Project\\Expense-Tracker-App-in-Asp.Net-Core-MVC\\Expense Tracker\\Expense Tracker.csproj": {}
+    "D:\\Arsen\\Andrii\\Kursova\\Expense_Manager\\Expense Tracker\\Expense Tracker.csproj": {}
   },
   "projects": {
-    "D:\\Arsen\\Andrii\\Kursova\\Project\\Expense-Tracker-App-in-Asp.Net-Core-MVC\\Expense Tracker\\Expense Tracker.csproj": {
+    "D:\\Arsen\\Andrii\\Kursova\\Expense_Manager\\Expense Tracker\\Expense Tracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Arsen\\Andrii\\Kursova\\Project\\Expense-Tracker-App-in-Asp.Net-Core-MVC\\Expense Tracker\\Expense Tracker.csproj",
+        "projectUniqueName": "D:\\Arsen\\Andrii\\Kursova\\Expense_Manager\\Expense Tracker\\Expense Tracker.csproj",
         "projectName": "Expense Tracker",
-        "projectPath": "D:\\Arsen\\Andrii\\Kursova\\Project\\Expense-Tracker-App-in-Asp.Net-Core-MVC\\Expense Tracker\\Expense Tracker.csproj",
+        "projectPath": "D:\\Arsen\\Andrii\\Kursova\\Expense_Manager\\Expense Tracker\\Expense Tracker.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Arsen\\Andrii\\Kursova\\Project\\Expense-Tracker-App-in-Asp.Net-Core-MVC\\Expense Tracker\\obj\\",
+        "outputPath": "D:\\Arsen\\Andrii\\Kursova\\Expense_Manager\\Expense Tracker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Expense_Tracker.Migrations
+namespace Expense_Manager.Migrations
 {
     public partial class InitialCreate : Migration
     {

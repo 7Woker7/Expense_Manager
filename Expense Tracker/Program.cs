@@ -1,4 +1,4 @@
-using Expense_Tracker.Models;
+using Expense_Manager.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +15,7 @@ Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Конфігурація пайплайну НТТР запитів.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");

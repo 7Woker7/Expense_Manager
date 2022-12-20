@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Expense_Tracker.Models;
+using Expense_Manager.Models;
 
-namespace Expense_Tracker.Controllers
+namespace Expense_Manager.Controllers
 {
     public class CategoryController : Controller
     {
@@ -18,7 +13,7 @@ namespace Expense_Tracker.Controllers
             _context = context;
         }
 
-        // GET: Category
+        // GET запит: Category
         public async Task<IActionResult> Index()
         {
             return _context.Categories != null ?
@@ -27,7 +22,7 @@ namespace Expense_Tracker.Controllers
         }
 
 
-        // GET: Category/AddOrEdit
+        // GET запит:  за посиланням Category/AddOrEdit
         public IActionResult AddOrEdit(int id = 0)
         {
             if (id == 0)
@@ -37,9 +32,7 @@ namespace Expense_Tracker.Controllers
 
         }
 
-        // POST: Category/AddOrEdit
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST запит: за посиланням Category/AddOrEdit
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddOrEdit([Bind("CategoryId,Title,Type")] Category category)
@@ -57,7 +50,7 @@ namespace Expense_Tracker.Controllers
         }
 
 
-        // POST: Category/Delete/5
+        // POST запит:  за посиланням Category/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
